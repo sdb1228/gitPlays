@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Allow sharing of plays and other coaching things",
   "main": "server.js",
-  "scripts": {
-    "start": "webpack-dev-server"
-  },
   "private": true,
   "author": "sburnett, feathj",
   "license": "ISC",

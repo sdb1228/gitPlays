@@ -3,7 +3,15 @@ web:
   ports:
     - "3000"
   volumes:
-    - ".:/app/user"
+    - ".:/usr/src/app"
+  command: "npm run server"
   environment:
     VIRTUAL_HOST: sports.docker
     NODE_ENV: development
+
+webpack:
+  build: .
+  volumes:
+    - ".:/usr/src/app"
+  command: "npm run development"
+
